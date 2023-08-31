@@ -11,15 +11,15 @@ public class PrintAndHide : MonoBehaviour
     void Start()
     {
          i = 3;
-        randomInt = Random.Range(150, 251);  // Generates a random integer between 150 and 250 inclusive
+        randomInt = Random.Range(150, 251);  
     }
 
     // Update is called once per frame
     void Update()
     {
-         i++;
+          i++;
         Debug.Log(gameObject.name + ":" + i);
-
+        
         if (gameObject.tag == "Red" && i == 100)
         {
             gameObject.SetActive(false);  // Deactivates the GameObject
